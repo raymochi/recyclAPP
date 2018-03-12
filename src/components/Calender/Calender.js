@@ -13,7 +13,7 @@ export default class Calender extends React.Component {
   static navigationOptions = ({ navigtion }) => {
     return {
       title: 'Calendar',
-      headerStyle: { backgroundColor: [0, 6].indexOf(new Date().getDay()) !== -1 || new Date().getHour() >= 19 || new Date().getHour() <= 7 ? '#52a676' : '#ec9b3f' },
+      headerStyle: { backgroundColor: [0, 6].indexOf(new Date().getDay()) !== -1 || new Date().getHours() >= 19 || new Date().getHours() <= 7 ? '#52a676' : '#ec9b3f' },
     }
   }
 

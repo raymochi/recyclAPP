@@ -18,7 +18,7 @@ export default class Home extends React.Component {
     return {
       title: 'Home',
       headerBackTitle: null,
-      headerStyle: { backgroundColor: [0, 6].indexOf(new Date().getDay()) !== -1 || new Date().getHour() >= 19 || new Date().getHour() <= 7 ? '#52a676' : '#ec9b3f'  },
+      headerStyle: { backgroundColor: [0, 6].indexOf(new Date().getDay()) !== -1 || new Date().getHours() >= 19 || new Date().getHours() <= 7 ? '#52a676' : '#ec9b3f'  },
       headerRight: <TouchableHighlight underlayColor="#e6e6e6" style={{ marginRight: 10, padding: 6, backgroundColor: '#e1e1e1', borderRadius: 20 }} onPress={() => navigation.navigate('Settings')}>
         <Image source={settingsImg} style={{width: 20, height: 20}} />
       </TouchableHighlight>
